@@ -7,7 +7,7 @@
     "noEmitOnError": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "declaration": true,
+    "declaration": false,
     "removeComments": true,
     "noLib": false,
     "skipLibCheck": true,

@@ -1,1 +1,0 @@
-export { AutoFitTextModule } from './app.module';

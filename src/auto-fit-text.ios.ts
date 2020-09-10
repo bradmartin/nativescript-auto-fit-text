@@ -3,14 +3,16 @@ import { Label } from '@nativescript/core';
 export class AutoFitText extends Label {
   constructor() {
     super();
-    const label: UILabel = this.nativeView;
-    label.font = label.font.fontWithSize(200);
-    label.adjustsFontSizeToFitWidth = true;
-    label.textAlignment = NSTextAlignment.Center;
   }
 
   initNativeView(): void {
     this.nativeView.owner = this;
+
+    const label = this.ios as UILabel;
+    // label.font = label.font.fontWithSize(40);
+    label.adjustsFontSizeToFitWidth = true;
+    label.textAlignment = NSTextAlignment.Natural;
+
     super.initNativeView();
   }
 
